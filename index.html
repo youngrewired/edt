@@ -13,6 +13,9 @@
     <section class="page-header">
       <h1 class="project-name">EDT Workshop</h1>
       <h2 class="project-tagline"></h2>
+      <a href="https://github.com/youngrewired/edt" class="btn">View on GitHub</a>
+      <a href="https://github.com/youngrewired/edt/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/youngrewired/edt/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
@@ -72,7 +75,34 @@
 <h1>
 <a id="javascript" class="anchor" href="#javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Javascript</h1>
 
-<p><a href="http://codepen.io/youngrewired/pen/EjMzaV">Codepen we'll be working off of</a></p>
+<p>HTML</p>
+
+<pre><code>&lt;div class="friends"&gt;
+    &lt;h2&gt;My friends&lt;/h2&gt;
+    &lt;input type="text" placeholder="New friend's name"&gt;
+    &lt;button id="add-friend"&gt;Add friend&lt;/button&gt;
+    &lt;ul class="friendlist"&gt;
+        &lt;li&gt;Kate&lt;/li&gt;
+        &lt;li&gt;Ruth&lt;/li&gt;
+        &lt;li&gt;Tony&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Javascript initial</p>
+
+<pre><code>$("#add-friend").click(function() {
+    // Magic in here!
+});
+</code></pre>
+
+<p>Javascript function</p>
+
+<pre><code>$("#add-friend").click(function() {
+  var item = $("input").val();
+  $("ul.friendlist").prepend("&lt;li&gt;" + item + "&lt;/li&gt;");
+});
+</code></pre>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/youngrewired/edt">EDT Workshop</a> is maintained by <a href="https://github.com/youngrewired">youngrewired</a>.</span>
