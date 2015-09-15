@@ -133,9 +133,11 @@
 <p>Adding a function to your Javascript</p>
 <p>Copy this into your JS code between the last two "{ }"</p>
 
-<pre><code>var item = $("input").val();
-  $("ul.friendlist").prepend("<li>" + item + "</li>");
+<pre><code> 
 
+var item = $("input").val();
+  $("ul.friendlist").prepend("&lt;li&gt;" + item + "&lt;/li&gt;");
+  
 </code></pre>
 
 
